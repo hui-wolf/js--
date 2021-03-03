@@ -1,0 +1,48 @@
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+#traffic-light {
+  background: #000000;
+  width: 120px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 24px;
+}
+#traffic-light ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#traffic-light li {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e4e5e9;
+  margin-bottom: 20px;
+}
+
+#traffic-light.red li:nth-child(1) {
+  background-color: #ee240d;
+  animation: 1s ease-in;
+}
+
+#traffic-light.green li:nth-child(2) {
+  background-color: #15e827;
+}
+
+#traffic-light.yellow li:nth-child(3) {
+  background-color: #fea501;
+}
+
+#traffic-light #time {
+  color: fc080a;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
